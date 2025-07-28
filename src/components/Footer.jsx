@@ -1,20 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
-
 export default function Footer() {
   const navLinks = [
     { name: 'Sobre', href: '#sobre' },
     { name: 'Pilares', href: '#servicos' },
     { name: 'Contato', href: '#contato' },
   ];
-
   const socialLinks = [
     { icon: <Facebook />, href: '#' },
     { icon: <Instagram />, href: '#' },
     { icon: <Linkedin />, href: '#' },
   ];
-
   const footerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -26,7 +23,6 @@ export default function Footer() {
       },
     },
   };
-
   return (
     <motion.footer
       className="bg-accent text-light-text"
@@ -46,10 +42,9 @@ export default function Footer() {
               />
             </a>
             <p className="max-w-xs text-gray-400">
-              Construindo o futuro com qualidade e confiança.
+              Arrumando com qualidade e confiança.
             </p>
           </div>
-
           <div>
             <h3 className="font-bold text-lg mb-4 text-primary">Navegação</h3>
             <ul className="space-y-2">
@@ -65,7 +60,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
           <div>
             <h3 className="font-bold text-lg mb-4 text-primary">Siga-nos</h3>
             <div className="flex justify-center md:justify-start space-x-4">
@@ -82,7 +76,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
         <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
           <p>
             &copy; {new Date().getFullYear()} NTC Brasil. Todos os direitos

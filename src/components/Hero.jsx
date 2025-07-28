@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
-
 export default function Hero() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -13,7 +12,6 @@ export default function Hero() {
       },
     },
   };
-
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -25,7 +23,6 @@ export default function Hero() {
       },
     },
   };
-
   return (
     <section
       id="hero"
@@ -38,7 +35,6 @@ export default function Hero() {
         }}
       ></div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-
       <motion.div
         className="relative z-10 container mx-auto px-6"
         variants={containerVariants}
@@ -50,11 +46,10 @@ export default function Hero() {
           className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-light-text mb-4"
           style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7)' }}
         >
-          Construindo o futuro com
+          Arrumando com
           <br />
           <span className="text-secondary">Qualidade e Confiança</span>
         </motion.h1>
-
         <motion.p
           variants={itemVariants}
           className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200"
@@ -63,7 +58,6 @@ export default function Hero() {
           Na NTC Brasil, cada projeto é uma obra-prima. Transformamos sua visão
           em realidade com excelência e compromisso.
         </motion.p>
-
         <motion.div variants={itemVariants}>
           <a
             href="#contato"
@@ -73,7 +67,6 @@ export default function Hero() {
           </a>
         </motion.div>
       </motion.div>
-
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
